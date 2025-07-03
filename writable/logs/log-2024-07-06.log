@@ -1,0 +1,1382 @@
+INFO - 2024-07-06 01:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 02:05:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "buku/tambah_buku.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('buku/tambah_buku.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/tambah_buku.php', [], true)
+ 3 APPPATH\Controllers\Buku.php(52): view('buku/tambah_buku.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 02:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 02:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 02:37:54 --> ErrorException: Undefined variable $kategori
+in APPPATH\Views\stok\list_stok.php on line 20.
+ 1 APPPATH\Views\stok\list_stok.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\list_stok.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\list_stok.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('stok/list_stok.php', [], true)
+ 5 APPPATH\Controllers\Stok.php(21): view('stok/list_stok.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:40:20 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::table()
+in APPPATH\Models\M_stok.php on line 23.
+ 1 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:41:14 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::table()
+in APPPATH\Models\M_stok.php on line 23.
+ 1 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:44:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::table()
+in APPPATH\Models\M_stok.php on line 23.
+ 1 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:46:06 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:46:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:46:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:46:06 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:50:50 --> ErrorException: Undefined variable $bkategori
+in APPPATH\Views\stok\tambah_stok.php on line 26.
+ 1 APPPATH\Views\stok\tambah_stok.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bkategori', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\tambah_stok.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\tambah_stok.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('stok/tambah_stok.php', [], true)
+ 5 APPPATH\Controllers\Stok.php(31): view('stok/tambah_stok.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:53:10 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:53:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:53:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:53:10 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:54:34 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:54:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:54:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'4\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'4\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:54:34 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:54:47 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:54:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:54:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:54:47 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:55:27 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:55:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:27 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:55:30 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:55:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:30 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:55:43 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:55:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:55:43 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:56:41 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:56:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:56:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:56:41 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:57:28 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(30): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:57:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(30): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:57:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(30): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:57:28 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(30): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:57:30 --> ErrorException: Undefined property: App\Controllers\Stok::$mBuku
+in APPPATH\Controllers\Stok.php on line 32.
+ 1 APPPATH\Controllers\Stok.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Stok::$mBuku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Controllers\\Stok.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:57:33 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::table()
+in APPPATH\Models\M_stok.php on line 23.
+ 1 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:58:14 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:58:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:58:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:58:14 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:58:39 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:58:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:58:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:58:39 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:59:32 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:59:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:32 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:59:49 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:59:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:49 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 02:59:52 --> mysqli_sql_exception: Unknown column 'stok' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sto...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sto...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sto...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sto...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 02:59:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 2 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 4 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 02:59:52 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_stok`.*, `tbl_buku`.`judul`
+FROM `tbl_stok`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_stok`.`kode_buku`
+ORDER BY `stok` ASC', [], false)
+ 5 APPPATH\Models\M_stok.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Stok.php(18): App\Models\M_stok->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 03:01:10 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 03:01:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:01:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:01:10 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 03:01:47 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 03:01:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:01:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:01:47 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 03:02:24 --> mysqli_sql_exception: Unknown column 'stok' in 'field list' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 03:02:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:02:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:02:24 --> [Caused by] mysqli_sql_exception: Unknown column 'stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok`) VALUES (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok`) VALUES (:stok:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 03:02:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_stok`, CONSTRAINT `buku1` FOREIGN KEY (`kode_buku`) REFERENCES `tbl_buku` (`kode_buku`)) in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Stok.php(27): App\Models\M_stok->add(Array)
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 03:02:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_stok`, CONSTRAINT `buku1` FOREIGN KEY (`kode_buku`) REFERENCES `tbl_buku` (`kode_buku`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (:stok_buku:)', [...], false)
+ 2 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:02:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_stok`, CONSTRAINT `buku1` FOREIGN KEY (`kode_buku`) REFERENCES `tbl_buku` (`kode_buku`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (:stok_buku:)', [...], false)
+ 4 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:02:55 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_stok`, CONSTRAINT `buku1` FOREIGN KEY (`kode_buku`) REFERENCES `tbl_buku` (`kode_buku`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_stok` (`stok_buku`) VALUES (:stok_buku:)', [...], false)
+ 5 APPPATH\Models\M_stok.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Stok.php(27): App\Models\M_stok->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:17:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "buku/edit_stok.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('buku/edit_stok.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/edit_stok.php', [], true)
+ 3 APPPATH\Controllers\Stok.php(42): view('buku/edit_stok.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:18:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "buku/edit_stok.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('buku/edit_stok.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/edit_stok.php', [], true)
+ 3 APPPATH\Controllers\Stok.php(42): view('buku/edit_stok.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:21:55 --> ErrorException: Attempt to read property "stok_buku" on string
+in APPPATH\Views\stok\edit_stok.php on line 15.
+ 1 APPPATH\Views\stok\edit_stok.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "stok_buku" on string', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\edit_stok.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\stok\\edit_stok.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('stok/edit_stok.php', [], true)
+ 5 APPPATH\Controllers\Stok.php(42): view('stok/edit_stok.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Stok->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:26:38 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\buku\edit_buku.php on line 16.
+ 1 APPPATH\Views\buku\edit_buku.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/edit_buku.php', [], true)
+ 5 APPPATH\Controllers\Buku.php(107): view('buku/edit_buku.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:27:31 --> ErrorException: Undefined property: stdClass::$nama_buku
+in APPPATH\Views\buku\edit_buku.php on line 24.
+ 1 APPPATH\Views\buku\edit_buku.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_buku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php', 24)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/edit_buku.php', [], true)
+ 5 APPPATH\Controllers\Buku.php(107): view('buku/edit_buku.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:30:58 --> ErrorException: Undefined property: stdClass::$nama_buku
+in APPPATH\Views\buku\edit_buku.php on line 32.
+ 1 APPPATH\Views\buku\edit_buku.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_buku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\buku\\edit_buku.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('buku/edit_buku.php', [], true)
+ 5 APPPATH\Controllers\Buku.php(107): view('buku/edit_buku.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 03:32:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_buku`, CONSTRAINT `kategori` FOREIGN KEY (`kode_kategori`) REFERENCES `tbl_kategori` (`kode_kategori`)) in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_buku...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_buku...')
+#2 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_buku.php(59): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_buku...')
+#3 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Buku.php(86): App\Models\M_buku->updateData('1', '23146871', '1', 'Dasar Pemrogram...', 'Bernandus Anggo...', 'Deepublish', '2024-07-09', '')
+#4 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+#5 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-07-06 03:32:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_buku`, CONSTRAINT `kategori` FOREIGN KEY (`kode_kategori`) REFERENCES `tbl_kategori` (`kode_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_buku SET  kode_buku = \'23146871\',ISBN = \'1\', judul = \'Dasar Pemrograman Dalam Bahasa\', penulis = \'Bernandus Anggoo\', penerbit = \'Deepublish\', tahun_terbit = \'2024-07-09\', kode_kategori = \'\' WHERE kode_buku = \'1\';')
+ 2 APPPATH\Models\M_buku.php(59): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_buku SET  kode_buku = \'23146871\',ISBN = \'1\', judul = \'Dasar Pemrograman Dalam Bahasa\', penulis = \'Bernandus Anggoo\', penerbit = \'Deepublish\', tahun_terbit = \'2024-07-09\', kode_kategori = \'\' WHERE kode_buku = \'1\';')
+ 3 APPPATH\Controllers\Buku.php(86): App\Models\M_buku->updateData('1', '23146871', '1', 'Dasar Pemrograman Dalam Bahasa', 'Bernandus Anggoo', 'Deepublish', '2024-07-09', '')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:32:01 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`perpustakaan-ci`.`tbl_buku`, CONSTRAINT `kategori` FOREIGN KEY (`kode_kategori`) REFERENCES `tbl_kategori` (`kode_kategori`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_buku SET  kode_buku = \'23146871\',ISBN = \'1\', judul = \'Dasar Pemrograman Dalam Bahasa\', penulis = \'Bernandus Anggoo\', penerbit = \'Deepublish\', tahun_terbit = \'2024-07-09\', kode_kategori = \'\' WHERE kode_buku = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_buku SET  kode_buku = \'23146871\',ISBN = \'1\', judul = \'Dasar Pemrograman Dalam Bahasa\', penulis = \'Bernandus Anggoo\', penerbit = \'Deepublish\', tahun_terbit = \'2024-07-09\', kode_kategori = \'\' WHERE kode_buku = \'1\';')
+ 3 APPPATH\Models\M_buku.php(59): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_buku SET  kode_buku = \'23146871\',ISBN = \'1\', judul = \'Dasar Pemrograman Dalam Bahasa\', penulis = \'Bernandus Anggoo\', penerbit = \'Deepublish\', tahun_terbit = \'2024-07-09\', kode_kategori = \'\' WHERE kode_buku = \'1\';')
+ 4 APPPATH\Controllers\Buku.php(86): App\Models\M_buku->updateData('1', '23146871', '1', 'Dasar Pemrograman Dalam Bahasa', 'Bernandus Anggoo', 'Deepublish', '2024-07-09', '')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:34:19 --> ErrorException: Undefined variable $buku
+in APPPATH\Views\kategori\edit_kategori.php on line 16.
+ 1 APPPATH\Views\kategori\edit_kategori.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $buku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\kategori\\edit_kategori.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\kategori\\edit_kategori.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kategori/edit_kategori.php', [], true)
+ 5 APPPATH\Controllers\Kategori.php(49): view('kategori/edit_kategori.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Kategori->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:34:26 --> ErrorException: Undefined variable $buku
+in APPPATH\Views\kategori\edit_kategori.php on line 16.
+ 1 APPPATH\Views\kategori\edit_kategori.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $buku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\kategori\\edit_kategori.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\kategori\\edit_kategori.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kategori/edit_kategori.php', [], true)
+ 5 APPPATH\Controllers\Kategori.php(49): view('kategori/edit_kategori.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Kategori->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:46:05 --> TypeError: App\Controllers\Buku::tambah(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Buku.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 03:46:24 --> TypeError: App\Controllers\Buku::tambah(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Buku.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Buku->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 03:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 03:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-06 04:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-06 04:00:39 --> Error: Class "App\Models\M_homeuser" not found
+in APPPATH\Controllers\HomeUser.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\HomeUser->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 04:00:42 --> Error: Class "App\Models\M_homeuser" not found
+in APPPATH\Controllers\HomeUser.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\HomeUser->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 04:01:34 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\user\home-user.php on line 26.
+ 1 APPPATH\Views\user\home-user.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\user\\home-user.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\user\\home-user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/home-user', [], true)
+ 5 APPPATH\Controllers\HomeUser.php(20): view('user/home-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\HomeUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 04:15:02 --> ErrorException: Undefined property: stdClass::$deskripsi
+in APPPATH\Views\user\home-user.php on line 42.
+ 1 APPPATH\Views\user\home-user.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$deskripsi', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\user\\home-user.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\user\\home-user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/home-user', [], true)
+ 5 APPPATH\Controllers\HomeUser.php(20): view('user/home-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\HomeUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 04:35:18 --> ErrorException: Undefined property: stdClass::$nama_kategori
+in APPPATH\Models\M_homeuser.php on line 42.
+ 1 APPPATH\Models\M_homeuser.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_kategori', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Models\\M_homeuser.php', 42)
+ 2 APPPATH\Controllers\HomeUser.php(18): App\Models\M_homeuser->listByCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\HomeUser->index()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeUser))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-06 11:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-06 23:00:15 --> mysqli_sql_exception: Unknown column 'kodebuku' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pem...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pem...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pem...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pem...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 23:00:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kodebuku' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC', [], false)
+ 2 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:00:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kodebuku' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC', [], false)
+ 4 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:00:15 --> [Caused by] mysqli_sql_exception: Unknown column 'kodebuku' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `kodebuku` ASC', [], false)
+ 5 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 23:01:00 --> mysqli_sql_exception: Unknown column 'status_pemesanan' in 'order clause' in C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\perpustakaan-ci\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pem...', 0)
+#1 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pem...')
+#2 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pem...')
+#3 C:\xampp\htdocs\perpustakaan-ci\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pem...', Array, false)
+#4 C:\xampp\htdocs\perpustakaan-ci\app\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpustakaan-ci\app\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+#6 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+#7 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+#8 C:\xampp\htdocs\perpustakaan-ci\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpustakaan-ci\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 23:01:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_pemesanan' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC', [], false)
+ 2 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:01:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_pemesanan' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC', [], false)
+ 4 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:01:00 --> [Caused by] mysqli_sql_exception: Unknown column 'status_pemesanan' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_peminjaman`.*, `tbl_user`.*, `tbl_buku`.*
+FROM `tbl_peminjaman`
+LEFT JOIN `tbl_user` ON `tbl_user`.`id_user` = `tbl_peminjaman`.`id_user`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`kode_buku` = `tbl_peminjaman`.`kode_buku`
+ORDER BY `status_pemesanan` ASC', [], false)
+ 5 APPPATH\Models\M_peminjaman.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Peminjaman.php(17): App\Models\M_peminjaman->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:01:24 --> ErrorException: Undefined variable $kategoriList
+in APPPATH\Views\peminjaman\tambah_peminjaman.php on line 66.
+ 1 APPPATH\Views\peminjaman\tambah_peminjaman.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategoriList', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\tambah_peminjaman.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\tambah_peminjaman.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('peminjaman/tambah_peminjaman.php', [], true)
+ 5 APPPATH\Controllers\Peminjaman.php(53): view('peminjaman/tambah_peminjaman.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:09:02 --> ErrorException: Undefined property: stdClass::$nama_buku
+in APPPATH\Views\peminjaman\tambah_peminjaman.php on line 33.
+ 1 APPPATH\Views\peminjaman\tambah_peminjaman.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_buku', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\tambah_peminjaman.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\tambah_peminjaman.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('peminjaman/tambah_peminjaman.php', [], true)
+ 5 APPPATH\Controllers\Peminjaman.php(53): view('peminjaman/tambah_peminjaman.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 23:53:49 --> ErrorException: Undefined property: stdClass::$gambar_peminjaman
+in APPPATH\Views\peminjaman\list_peminjaman.php on line 28.
+ 1 APPPATH\Views\peminjaman\list_peminjaman.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$gambar_peminjaman', 'C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\list_peminjaman.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\perpustakaan-ci\\app\\Views\\peminjaman\\list_peminjaman.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('peminjaman/list_peminjaman.php', [], true)
+ 5 APPPATH\Controllers\Peminjaman.php(23): view('peminjaman/list_peminjaman.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Peminjaman->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peminjaman))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
