@@ -1,60 +1,150 @@
-# CodeIgniter 4 Framework
+📚 LibraryPro – Aplikasi Perpustakaan Berbasis CodeIgniter 4
 
-## What is CodeIgniter?
+🚀 Apa itu LibraryPro?
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+LibraryPro adalah aplikasi web sederhana berbasis CodeIgniter 4 yang digunakan untuk mengelola aktivitas perpustakaan. Aplikasi ini dibagi menjadi dua peran utama:
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+👨‍💼 Admin – mengelola data buku, mencatat peminjaman, dan pengembalian.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+👤 User – melihat daftar buku yang tersedia dan riwayat peminjaman pribadi.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
 
-## Important Change with index.php
+Dirancang ringan dan cepat untuk kebutuhan internal perpustakaan sekolah, kampus, atau kantor kecil.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+---
 
-**Please** read the user guide for a better explanation of how CI4 works!
+⚙️ Fitur Utama
 
-## Repository Management
+🛠️ Admin Panel
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+CRUD Data Buku
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+Input & Kelola Transaksi Peminjaman
 
-## Contributing
+Riwayat Pengembalian
 
-We welcome contributions from the community.
+Dashboard ringkasan aktivitas
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
 
-## Server Requirements
+📖 User Panel
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+Lihat Stok Buku Tersedia
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+Lihat Riwayat Peminjaman Pribadi
 
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
+Cek status peminjaman (masih dipinjam / sudah dikembalikan)
 
-Additionally, make sure that the following extensions are enabled in your PHP:
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+---
+
+🧱 Teknologi yang Digunakan
+
+PHP 8.x
+
+CodeIgniter 4 Framework
+
+MySQL
+
+Bootstrap 5 (UI)
+
+SweetAlert (Feedback interaktif)
+
+
+
+---
+
+💻 Instalasi
+
+1. Clone repository
+
+git clone https://github.com/username/librarypro.git
+
+2. Pindahkan folder ke dalam web server
+
+XAMPP → letakkan di htdocs/librarypro
+
+Laragon → letakkan di www/librarypro
+
+
+3. Buat database
+
+Nama database: library_db
+
+Import file library_db.sql dari folder /database
+
+
+4. Konfigurasi file .env
+
+Buka file .env (atau duplikat dari .env.example) dan sesuaikan database:
+
+database.default.hostname = localhost
+database.default.database = library_db
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+
+5. Jalankan di browser
+
+http://localhost/librarypro/public
+
+
+---
+
+🔒 Login Akun Default
+
+Role	Username	Password
+
+Admin	admin	admin123
+User	user	user123
+
+
+> Gantilah password setelah login untuk alasan keamanan.
+
+
+
+
+---
+
+🖼️ Tampilan Aplikasi
+
+📚 Dashboard Admin
+
+
+📘 Tampilan User
+
+
+(Silakan ganti dengan screenshot asli aplikasi LibraryPro kamu)
+
+
+---
+
+📦 Persyaratan Sistem
+
+PHP 8.0 atau lebih tinggi
+
+MySQL / MariaDB
+
+Composer (opsional, jika menggunakan fitur autoload tambahan)
+
+Apache/Nginx
+
+Browser modern
+
+
+
+---
+
+📜 Lisensi
+
+Aplikasi ini menggunakan lisensi MIT.
+Silakan gunakan dan modifikasi untuk keperluan pribadi, instansi, atau edukasi.
+
+
+---
+
+🙋 Bantuan & Pengembangan
+
+Jika kamu tertarik untuk berkontribusi atau mengalami kendala saat instalasi, silakan hubungi:
+📬 Telegram: @rama
